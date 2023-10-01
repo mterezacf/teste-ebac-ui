@@ -3,7 +3,7 @@
 describe('Funcionalidade de produtos' , () =>{
 
     beforeEach(() =>{
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+        cy.visit('produtos/')
 
     });
 
@@ -17,7 +17,7 @@ describe('Funcionalidade de produtos' , () =>{
 
     });
 
-    it.only('Deve adicionar um produto ao carrinho', () => {
+    it('Deve adicionar um produto ao carrinho', () => {
         var quantidade = 3
 
         cy.get('[class="product-block grid"]')
