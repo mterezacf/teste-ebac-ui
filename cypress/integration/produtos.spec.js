@@ -33,5 +33,10 @@ describe('Funcionalidade de produtos' , () =>{
 
     });
 
+    it('Deve adicionar um produto ao carrinho usando comando customisado', () => {
+        cy.addProdutos('Abominable Hoodie', 'M', 'Blue', 3)
+
+    });
+
 
 })

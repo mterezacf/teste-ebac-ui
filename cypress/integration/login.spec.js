@@ -32,7 +32,7 @@ context('Funcionalidade Login' , () =>{
 
     })
 
-    it.only('Deve fazer longin com sucesso - Usando fixtures' , () =>{
+    it('Deve fazer longin com sucesso - Usando fixtures' , () =>{
         cy.fixture('perfin').then(dados =>{
             cy.get('#username').type(dados.usuario)
             cy.get('#password').type(dados.senha, {log: false})
